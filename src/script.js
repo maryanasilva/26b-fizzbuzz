@@ -3,7 +3,7 @@ let buzzCount = 0;
 let fizzbuzzCount = 0;
 let integersCount = 0;
 
-const multiples = (start, end) => {
+const findMultiples = (start, end) => {
   let result = "";
 
   for (let i = start; i <= end; i++) {
@@ -38,7 +38,7 @@ const statisticResultInteger = document.getElementById(
   "statistics__result--integer"
 );
 
-const displayErrorMessage = function (element, message) {
+const displayErrorMessage = (element, message) => {
   element.textContent = message;
 };
 
@@ -57,46 +57,36 @@ const resetCounts = () => {
   integersCount = 0;
 };
 
-const handleGenerateBtn = () => {
-  let hasError = false;
+const validateInputs = (input, errorMessage) => {
+  if (!input || input < 1 || input % 1 !== 0) {
+    displayErrorMessage(errorMessage, "⛔️ Only positive integers");
+    return false;
+  }
+  displayErrorMessage(errorMessage, "");
+  return true;
+};
 
-  // Storing input values
+// Click handler for the generate button
+const handleGenerateBtn = () => {
   const valueMin = inputMin.value;
   const valueMax = inputMax.value;
-  console.log(valueMin);
-  console.log(valueMax);
 
-  // Check if there is an input, if it is positive and integer
-  if (!valueMin || valueMin < 1 || valueMin % 1 !== 0) {
-    displayErrorMessage(
-      document.querySelector(".error_message--min"),
-      "⛔️ Only positive integers"
-    );
-    inputMin.value = "";
+  const minInputValid = validateInputs(
+    valueMin,
+    document.querySelector(".error_message--min")
+  );
+
+  const maxInputValid = validateInputs(
+    valueMax,
+    document.querySelector(".error_message--max")
+  );
+
+  if (!minInputValid || !maxInputValid) {
     clearOutputs();
-    hasError = true;
-  } else {
-    displayErrorMessage(document.querySelector(".error_message--min"), "");
+    return;
   }
 
-  if (!valueMax || valueMax < 1 || valueMax % 1 !== 0) {
-    displayErrorMessage(
-      document.querySelector(".error_message--max"),
-      "⛔️ Only positive integers"
-    );
-    inputMax.value = "";
-    clearOutputs();
-    hasError = true;
-  } else {
-    displayErrorMessage(document.querySelector(".error_message--max"), "");
-  }
-
-  if (hasError) return;
-
-  const start = valueMin;
-  const end = valueMax;
-
-  const finalResult = multiples(start, end);
+  const finalResult = findMultiples(valueMin, valueMax);
   outputResult.textContent = finalResult;
   statisticResultFizz.textContent = fizzCount;
   statisticResultBuzz.textContent = buzzCount;
@@ -105,8 +95,7 @@ const handleGenerateBtn = () => {
   resetCounts();
 };
 
-btnGenerate.addEventListener("click", function (e) {
+btnGenerate.addEventListener("click", (e) => {
   e.preventDefault();
   handleGenerateBtn();
-  return false;
 });

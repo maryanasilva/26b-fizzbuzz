@@ -11,14 +11,14 @@ body,
   font-family: "Roboto Mono", monospace;
 }
 
-.nav .fizzbuzz,
+/* .nav .fizzbuzz,
 .form-label,
 .output-label,
 .statistics,
 .statistics-label,
 .statistics-text {
   font-weight: bold;
-}
+} */
 
 .nav {
   display: flex;
@@ -84,7 +84,6 @@ body,
   width: 150px;
 }
 
-/* HERE */
 .error_message--min,
 .error_message--max {
   color: black;
@@ -119,7 +118,6 @@ body,
   border-radius: 8px;
   height: 96px;
   margin-top: 10px;
-  /* padding: 8px, 16px, 8px, 16px; */
 }
 
 .output-text {
@@ -196,7 +194,6 @@ body,
     padding: 8px;
   }
 
-  /* HERE */
   .error_message--min,
   .error_message--max {
     color: black;
