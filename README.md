@@ -34,7 +34,8 @@ As practice, trial and error, seeking a solution and correcting the error are th
 
 <br>
 
-### Final branch commit:
-Step-1: <br>
-Step-2: <br>
-Step-3: <br>
+### Final branch commit (sha-1 code):
+Main: 7de44784a94e1f5c15f9bdfa4383b7f0f6e3de0e <br>
+Step-1: 6017c1cd524a8045d26989dd2ce302a133d84c06 <br>
+Step-2: 096a2cdf93c311d02708c32f79c3d5ef81e36ba0 <br>
+Step-3: e02c533c9352c60be96dec441d1e1810584e9042 <br>
