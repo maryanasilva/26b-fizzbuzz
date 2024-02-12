@@ -2,9 +2,8 @@
   "name": "26b-fizzbuzz",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "parcel build",
+    "build": "parcel build src/step2.js",
     "test": "jest"
   },
   "author": "",
