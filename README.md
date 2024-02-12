@@ -28,7 +28,7 @@ Running the program with a range between 1-20 should produce the following resul
 <br>
 
 ## Step-3
-In this last step I had to build the visual interface for the previous solution, following the design specifications provided.
+In this last step I had to build the visual interface (desktop and mobile) for the previous solution, following the design specifications provided.
 
 As practice, trial and error, seeking a solution and correcting the error are the best way to learn, **I built a complete app using HTML, CSS, and JS**.
 
