@@ -1,4 +1,4 @@
-# 26b-fizzbuzz
+# 💻 26b-fizzbuzz
 This is a code challenge consisting of 3 steps, each step corresponds to a branch.
 
 ## Step-1
@@ -34,8 +34,50 @@ As practice, trial and error, seeking a solution and correcting the error are th
 
 <br>
 
-### Final branch commit (sha-1 code):
+## Final branch commit (sha-1 code):
 Main: 7de44784a94e1f5c15f9bdfa4383b7f0f6e3de0e <br>
 Step-1: 6017c1cd524a8045d26989dd2ce302a133d84c06 <br>
 Step-2: 096a2cdf93c311d02708c32f79c3d5ef81e36ba0 <br>
 Step-3: e02c533c9352c60be96dec441d1e1810584e9042 <br>
+
+<br>
+
+## ⚙ How to build and test it
+
+Before you begin, you'll need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+
+### 1. Clone the repository
+
+You can clone this repository using the following command:
+
+```bash
+git clone https://github.com/maryanasilva/26b-fizzbuzz.git
+```
+
+### 2. Install dependencies
+
+After cloning the repository, navigate to the project directory and install the dependencies by running:
+
+```bash
+cd 26b-fizzbuzz
+npm install
+```
+
+### 3. Build the project
+
+After choosing the branch you want to build, navigate to that branch and build it by running:
+
+```bash
+git checkout [step-1] or [step-2] or [step-3]
+npm run build
+```
+
+### 4. Test the project
+
+After choosing the branch you want to test, navigate to that branch and test it by running:
+
+```bash
+git checkout [step-1] or [step-2] or [step-3]
+npm test
+```
+
