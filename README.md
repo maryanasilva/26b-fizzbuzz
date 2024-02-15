@@ -1,4 +1,4 @@
-# 👩‍💻 26b-fizzbuzz
+# 👩‍💻 26B Exercise
 This is a code challenge consisting of 3 steps, each step corresponds to a branch.
 
 ## Step-1
