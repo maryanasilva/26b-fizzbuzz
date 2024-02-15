@@ -35,10 +35,10 @@ As practice, trial and error, seeking a solution and correcting the error are th
 <br>
 
 ## Final branch commit (sha-1 code):
-Main: 7de44784a94e1f5c15f9bdfa4383b7f0f6e3de0e <br>
-Step-1: 6017c1cd524a8045d26989dd2ce302a133d84c06 <br>
-Step-2: 096a2cdf93c311d02708c32f79c3d5ef81e36ba0 <br>
-Step-3: e02c533c9352c60be96dec441d1e1810584e9042 <br>
+Main: <b>7de44784a94e1f5c15f9bdfa4383b7f0f6e3de0e</b> <br>
+Step-1: <b>6017c1cd524a8045d26989dd2ce302a133d84c06</b> <br>
+Step-2: <b>096a2cdf93c311d02708c32f79c3d5ef81e36ba0</b> <br>
+Step-3: <b>e02c533c9352c60be96dec441d1e1810584e9042</b> <br>
 
 <br>
 
@@ -63,20 +63,20 @@ cd 26b-fizzbuzz
 npm install
 ```
 
-### 3. Build the project
+### 3. Build the project (using Parcel)
 
 After choosing the branch you want to build, navigate to that branch and build it by running:
 
 ```bash
-git checkout [step-1] or [step-2] or [step-3]
+git checkout step-3
 npm run build
 ```
 
-### 4. Test the project
+### 4. Test the project (using Jest)
 
 After choosing the branch you want to test, navigate to that branch and test it by running:
 
 ```bash
-git checkout [step-1] or [step-2] or [step-3]
+git checkout step-3
 npm test
 ```
