@@ -71,12 +71,3 @@ After choosing the branch you want to build, navigate to that branch and build i
 git checkout step-3
 npm run build
 ```
-
-### 4. Test the project (using Jest)
-
-After choosing the branch you want to test, navigate to that branch and test it by running:
-
-```bash
-git checkout step-3
-npm test
-```
