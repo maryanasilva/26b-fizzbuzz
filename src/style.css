@@ -4,6 +4,12 @@ body {
   margin: 50px;
 }
 
+/* @media (max-width: 767px) {
+  body {
+    margin: 20px;
+  }
+} */
+
 body,
 .message,
 .form-input,
