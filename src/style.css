@@ -116,7 +116,8 @@ body,
   background-color: #fffffd;
   border: 1px solid #f29f07;
   border-radius: 8px;
-  height: 96px;
+  /* height: 96px; */
+  min-height: 96px;
   margin-top: 10px;
 }
 
@@ -156,7 +157,8 @@ body,
 }
 
 /* MOBILE */
-@media (min-width: 390px) and (max-width: 767px) {
+/* @media (min-width: 390px) and (max-width: 767px) { */
+@media (max-width: 767px) {
   body {
     margin: 20px;
   }
