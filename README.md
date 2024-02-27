@@ -77,7 +77,7 @@ npm run build
 After choosing the branch you want to test, navigate to that branch and test it by running:
 
 ```bash
-git checkout [step-1] or [step-2] or [step-3]
+git checkout [step-1] or [step-2]
 npm test
 ```
 
